@@ -14,7 +14,8 @@
 |Clipboard Manager|[clipmenud](https://github.com/cdown/clipmenu)|
 |Battery Notification|[bato](https://github.com/doums/bato)|
 |Display Manager|lightdm|
-|Display Manager Greeter|lightdm-webkit2-greeter|
+||lightdm-webkit2-greeter|
+||[aqua](https://github.com/paysonwallach/aqua-lightdm-webkit-theme)|
 |Fonts|[UbuntuMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/UbuntuSans.zip)|
 ||[feather](https://github.com/adi1090x/polybar-themes/raw/master/fonts/feather.ttf)|
 ||[fontawesome](https://archlinux.org/packages/extra/any/ttf-font-awesome/)|
