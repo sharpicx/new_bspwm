@@ -5,6 +5,10 @@
 |init run|systemd|
 |WM|bspwm|
 |Keybinding Manager|sxhkd|
+|Network|wpa_supplicant|
+||iwd|
+||iw|
+||NetworkManager|
 |Compositor|[picom](https://github.com/yshui/picom)|
 |Panel bar|[Polybar](https://aur.archlinux.org/packages/polybar-git)|
 |Widget|[eww](https://aur.archlinux.org/packages/eww-x11)|
@@ -32,6 +36,9 @@
 ||fzf-tab|
 ||zsh-async|
 |Code Editor|neovim|
+|Audio Manager|pavucontrol|
+||pamixer|
+|Brightness Controller|brightnessctl|
 |ls replacement|eza|
 |cat replacement|bat|
 |GTK Theme|[Arc-BLACK-3.36](https://www.gnome-look.org/p/1329022)|
