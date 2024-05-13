@@ -38,3 +38,6 @@
 |GTK Icon|[Win11-dark](https://www.gnome-look.org/p/1546069/)|
 |File Manager|Thunar|
 |Mouse Cursor|[Bibata-Modern-Classic](https://www.gnome-look.org/p/1914825/)|
+
+## Screenshot
+
