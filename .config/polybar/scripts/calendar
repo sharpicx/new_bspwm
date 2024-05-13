@@ -1,0 +1,11 @@
+#! /bin/bash
+
+EWW_CALENDAR=/tmp/eww_calendar.lock
+
+if [[ ! -f "$EWW_CALENDAR" ]]; then
+    touch "$EWW_CALENDAR"
+    eww -c $HOME/.config/eww open calendar
+else
+    eww -c $HOME/.config/eww close calendar
+    rm "$EWW_CALENDAR"
+fi

@@ -1,0 +1,11 @@
+#! /bin/bash
+
+EWW_BRIGHTNESS=/tmp/eww_brightness.lock
+
+if [[ ! -f "$EWW_BRIGHTNESS" ]]; then
+    touch "$EWW_BRIGHTNESS"
+    eww -c $HOME/.config/eww open brightness
+else
+    eww -c $HOME/.config/eww close brightness
+    rm "$EWW_BRIGHTNESS"
+fi

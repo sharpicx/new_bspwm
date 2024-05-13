@@ -1,0 +1,82 @@
+(defwidget cal []
+	(box :class "cal-box" 
+		 :orientation "v"
+	    (box :class "cal-inner-box"
+	        (calendar :class "cal" 
+			  :day calendar_day 
+			  :month calendar_month 
+			  :year calendar_year
+            )
+        )
+    )
+)
+(defpoll calendar_day :interval "10h" "date '+%d'")
+(defpoll calendar_month :interval "10h" "date '+%m")
+(defpoll calendar_year :interval "10h" "date '+%Y'")
+
+(defwindow calendar
+	:geometry (geometry :x "6px" 
+						:y "39px" 
+						:width "270px" 
+						:height "60px")
+(cal))
+
+(defwidget vol []
+    (box :class "stats-box"
+         :orientation "h"
+        (box :orientation "h"
+             :space-evenly "false"
+             :class "vol-slider"
+            (box :class "vol-label ${volume_class}"
+                volume_icon
+            )
+            (scale :value volume_value
+                   :onchange "/home/via/.config/polybar/scripts/volume set {}"
+                   :min 0
+                   :max 101
+                   :tooltip "Volume: ${volume_value}"
+                   :orientation "h"
+            )
+        )
+    )
+)
+(defwindow volume
+  :geometry (geometry :x "1630px"
+                      :y "39px"
+                      :width "135px"
+                      :height "5%")
+(vol))
+
+(defpoll volume_class :interval "1s" "/home/via/.config/polybar/scripts/volume --class")
+(defpoll volume_value_percentage :interval "1s" "/home/via/.config/polybar/scripts/volume --percentage")
+(defpoll volume_value :interval "1s" "/home/via/.config/polybar/scripts/volume --vol")
+(defpoll volume_icon :interval "1s" "/home/via/.config/polybar/scripts/volume --icon")
+
+(defwidget bright []
+    (box :class "stats-box"
+         :orientation "h"
+        (box :orientation "h"
+             :space-evenly "false"
+             :class "br-slider"
+            (box :class "br-label"
+                br_icon
+            )
+            (scale :value br
+                   :onchange "brightnessctl s {}%"
+                   :min 0
+                   :max 101
+                   :tooltip "Brightness: ${volume_value}"
+                   :orientation "h"
+            )
+        )
+    )
+)
+(defwindow brightness
+  :geometry (geometry :x "1500px"
+                      :y "39px"
+                      :width "135px"
+                      :height "5%")
+(bright))
+
+(defpoll br_icon :interval "1s" "/home/via/.config/polybar/scripts/brightness icon")
+(defpoll br :interval "1s" "/home/via/.config/polybar/scripts/brightness br")

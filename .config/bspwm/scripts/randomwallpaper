@@ -1,0 +1,8 @@
+#! /bin/bash
+
+dir=$HOME/Pictures/walls
+files=($(/bin/ls $dir))
+files_length=${#files[@]}
+random_index=$((RANDOM % files_length))
+
+feh --bg-fill $dir/${files[random_index]} --bg-fill $dir/${files[random_index]}

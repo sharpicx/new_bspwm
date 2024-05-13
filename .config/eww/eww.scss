@@ -1,0 +1,106 @@
+.stats-box {
+  background-color: #090909;
+  padding: 0px 10px;
+  slider {
+    all: unset;
+    color: #fff;
+  }
+}
+
+.vol-slider {
+  margin-top: -1px;
+  .vol-label {
+    font-size: 28px;
+    margin-left: 2px;
+    &.red { color: #ea607e; }
+    &.magenta { color: #b1e3ad; }
+    &.yellow { color: #ebddaa; }
+    &.blue { color: #a4b9ef; }
+  }
+  & scale trough {
+    all: unset;
+    background-color: #090909;
+    border-radius: 50px;
+    min-height: 8px;
+    margin-top: 0px;
+    min-width: 170px;
+    margin-left: 15px;
+    & highlight {
+      all: unset;
+      background-color: #a4b9ef;
+      color: #000000;
+      border-radius: 10px;
+    }
+  }
+}
+
+.br-slider {
+  margin-top: -1px;
+  .br-label {
+    font-size: 28px;
+    margin-left: 1px;
+    color: #ebddaa;
+  }
+  & scale trough {
+    all: unset;
+    background-color: #090909;
+    border-radius: 50px;
+    min-height: 8px;
+    min-width: 170px;
+    margin-top: 0px;
+    margin-left: 15px;
+    & highlight {
+      all: unset;
+      background-color: #ebddaa;
+      color: #090909;
+      border-radius: 10px;
+    }
+  }
+}
+
+
+.cal-box {
+  background-color: #090909;
+  border-radius: 5px;
+  font-family: "UbuntuMono Nerd Font";
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+
+  .cal-inner-box {
+    padding: 10px 10px 0.2rem;
+
+    .cal {
+      &.highlight {
+        padding: 10rem;
+      }
+      background-color: #090909;
+      padding: 0.8rem 0.25rem 0rem;
+      margin-left: 10px;
+    }
+  }
+}
+
+calendar:selected {
+  color: #efd8a8;
+  font-weight: bold;
+}
+
+calendar.header {
+  color: #de7c94;
+  font-weight: bold;
+}
+
+calendar.button {
+  color: #fff;
+}
+
+calendar.highlight {
+  color: #a4b9ef;
+  font-weight: bold;
+}
+
+calendar:indeterminate {
+  color: #d7dae0;
+}
+

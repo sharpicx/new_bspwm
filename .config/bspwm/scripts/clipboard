@@ -1,0 +1,3 @@
+#! /bin/bash
+
+cliphist list | sed 's/^[0-9]\+\s*//' | rofi -dmenu -theme $HOME/.config/bspwm/scripts/clip.rasi -window-title " " | wl-copy

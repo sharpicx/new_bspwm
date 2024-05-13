@@ -1,0 +1,11 @@
+#! /bin/bash
+
+EWW_VOLUME=/tmp/eww_volume.lock
+
+if [[ ! -f "$EWW_VOLUME" ]]; then
+    touch "$EWW_VOLUME"
+    eww -c $HOME/.config/eww open volume
+else
+    eww -c $HOME/.config/eww close volume
+    rm "$EWW_VOLUME"
+fi
