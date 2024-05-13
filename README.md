@@ -39,5 +39,8 @@
 |File Manager|Thunar|
 |Mouse Cursor|[Bibata-Modern-Classic](https://www.gnome-look.org/p/1914825/)|
 
-## Screenshot
-![a](./preview.png)
+<details>
+  <summary>Preview</summary>
+  <img src="./preview.png">
+</details>
+
