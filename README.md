@@ -20,6 +20,7 @@
 ||[feather](https://github.com/adi1090x/polybar-themes/raw/master/fonts/feather.ttf)|
 ||[fontawesome](https://archlinux.org/packages/extra/any/ttf-font-awesome/)|
 ||[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip)|
+|Terminal|kitty|
 |Terminal Multiplexer|tmux|
 |Shell|zsh|
 |ZSH Plugin|zsh-fzf-plugin|
