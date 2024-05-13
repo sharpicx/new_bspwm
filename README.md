@@ -34,7 +34,7 @@
 |Code Editor|neovim|
 |ls replacement|eza|
 |cat replacement|bat|
-|GTK Theme|Arc-BLACK-3.36|
-|GTK Icon|Win11-dark|
-|File Manager|thunar|
-|Mouse Cursor|Bibata-Modern-Classic|
+|GTK Theme|[Arc-BLACK-3.36](https://www.gnome-look.org/p/1329022)|
+|GTK Icon|[Win11-dark](https://www.gnome-look.org/p/1546069/)|
+|File Manager|Thunar|
+|Mouse Cursor|[Bibata-Modern-Classic](https://www.gnome-look.org/p/1914825/)|
