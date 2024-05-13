@@ -72,7 +72,7 @@
     )
 )
 (defwindow brightness
-  :geometry (geometry :x "1500px"
+  :geometry (geometry :x "1425px"
                       :y "39px"
                       :width "135px"
                       :height "5%")
