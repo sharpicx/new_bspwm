@@ -6,6 +6,7 @@
 |WM|bspwm|
 |Keybinding Manager|sxhkd|
 |Network|wpa_supplicant|
+|WM Management|xtitle|
 ||iwd|
 ||iw|
 ||NetworkManager|
